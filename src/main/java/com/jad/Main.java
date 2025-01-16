@@ -6,8 +6,8 @@ import com.jad.show.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("UtilityClassCanBeEnum")
-public final class Main {
+public enum Main {
+    ;
     public static void main(final String[] args) {
         final ISpectator jad = new Spectator("Jean-Aymeric", "Diet");
 
