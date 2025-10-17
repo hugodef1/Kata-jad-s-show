@@ -1,6 +1,8 @@
 package com.jad.customer;
 
 import com.jad.show.IShow;
+import com.jad.show.MovieShow;
+import com.jad.show.TheaterShow;
 
 public class Spectator implements ISpectator {
     private final String firstName;
@@ -23,6 +25,10 @@ public class Spectator implements ISpectator {
 
     @Override
     public void watch(final IShow show) {
-        // TODO: Implement this method
+    }
+
+    @Override
+    public void watch(TheaterShow show) {
+
     }
 }
