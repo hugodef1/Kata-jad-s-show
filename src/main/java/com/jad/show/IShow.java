@@ -6,5 +6,7 @@ public interface IShow {
     String getName();
     String getDescription();
     ShowType getShowType();
-    void watchBy(final ISpectator spec);
+
+    void watchedBy(ISpectator spec);
+
 }

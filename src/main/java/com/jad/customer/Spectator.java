@@ -25,10 +25,16 @@ public class Spectator implements ISpectator {
 
     @Override
     public void watch(final IShow show) {
+        show.watchedBy(this);
     }
 
     @Override
     public void watch(TheaterShow show) {
-
     }
+
+    @Override
+    public void watch(final MovieShow show) {
+        System.out.println("J'ai assisté au film " + show.getName() + " de " + show.getDirector() + " sorti en " + show.getYearOfRelease());
+    }
+
 }
