@@ -30,6 +30,7 @@ public class Spectator implements ISpectator {
 
     @Override
     public void watch(TheaterShow show) {
+        System.out.println("J'ai assisté à la pièce de Théâtre " + show.getName() + " de " + " ");
     }
 
     @Override
